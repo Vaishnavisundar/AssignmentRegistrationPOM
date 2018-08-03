@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 align="center">REGISTRATION PAGE</h1>
+
+	<table>
+
+		<form action="RegisterSuccessfulProject.html"
+			onsubmit="validateDetails()" method="post">
+
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" id="fname" pattern="[A-Za-z]{1,10}"
+					required title="Please do not leave the field empty"/></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" id="lname" pattern="[A-Za-z]{1,10}"
+					required title="Please do not leave the field empty" /></td>
+			</tr>
+			<tr>
+				<td>Email ID</td>
+				<td><input type="email" id="email" pattern=".+@capgemini.com"
+					size="30" required title="Must be a @capgemini.com email address" /></td>
+			</tr>
+			<tr>
+				<td>Contact Number</td>
+				<td><input type="number" id="contactnumber"
+					pattern="[9-7][0-9]{9}" required
+					title="Please do not leave the field empty" /></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" id="address" pattern="[A-Za-z]{1,20}"
+					required title="Please do not leave the field empty" /></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><input type="text" id="city" pattern="[A-Za-z]{1,10}"
+					required title="Please do not leave the field empty" /></td>
+			</tr>
+			<tr>
+				<td>State</td>
+				<td><select id="state" pattern="[A-Za-z]{10}" required
+					title="Please do not leave the field empty">
+						<option value="select">Select</option>
+						<option value="tamilnadu">Tamil Nadu</option>
+						<option value="kerala">Kerala</option>
+						<option value="karnataka">Karnataka</option>
+						<option value="maharashtra">Maharashtra</option>
+						<option value="delhi">Delhi</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><input type="submit" id="submit" value="Submit" /></td>
+			</tr>
+
+			<script>
+				function validateDetails(form) {
+					alert("Details Validated");
+				}
+			</script>
+
+
+		</form>
+
+	</table>
+
+</body>
+</html>
